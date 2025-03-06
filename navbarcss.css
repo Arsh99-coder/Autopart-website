@@ -1,0 +1,33 @@
+header{
+    background-color: black;
+}
+.logo{
+    margin-right: 60px;
+    border: 1px solid black;
+    float: left;
+    margin: 3px;
+}
+.logo img{
+    height: 40px;
+}
+nav{
+    padding: 4px;
+}
+li{
+    display: inline-block;
+    gap: 60px;
+}
+
+li a{
+    display: flex;
+    gap: 50px;
+    color: rgb(252, 201, 105);
+}
+a:hover{
+color: orange;
+background-color: white;
+border-radius: 10%;
+}
+img{
+    
+}

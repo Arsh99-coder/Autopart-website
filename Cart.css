@@ -1,0 +1,127 @@
+/* Product Card Styling */
+.product-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.add-to-cart-btn, .buy-now-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    font-size: 0.9em;
+}
+
+/* "Buy Now" Button Styling */
+.buy-now-btn {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.buy-now-btn:hover {
+    background-color: #28a745;
+}
+
+/* "Add to Cart" Button Styling */
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Cart Module Styling (same as before) */
+.cart-module {
+    width: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.cart-module h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cart-items {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.cart-total {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.1s;
+}
+
+.checkout-btn:hover {
+    background-color: #0069d9;
+}
+
+/* -------------remove button on cart------------ */
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.1s;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}

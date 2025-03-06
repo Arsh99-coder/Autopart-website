@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This website aims to deliver best auto-part to the customers">
+    <meta name="keywords" content="Autopart website, Auto-parts,  Car parts,  Car accessories,   Car spares,   Car components">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Consult</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="testcss.css">
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="piston-moto.png" alt="Moto Consult Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="CartExternal.html">  <i class="fas fa-shopping-cart"> Cart</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Rev Up Your Ride</h1>
+            <p>Discover the perfect auto parts to elevate your driving experience.</p>
+            <button id="Shop-button">Shop Now</button>
+
+        </div>
+        <img src="hero3.jpg" alt="Hero Image" class="hero-image">
+    </section>
+
+    <main>
+
+        
+        <!-- Cart Module -->
+        <!-- <div class="cart-module" id="cartModule">
+            <h3>Shopping Cart</h3>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div> -->
+
+        <section id="products">
+            <h2>Our Products</h2>
+
+        <!-- Product Card Start -->
+       <!-- Product Card -->
+       <div class="product-grid">
+<div class="product-card">
+    <img src="airfilter.jpeg" alt="Product Image" class="product-image">
+    <h2 class="product-title">BMC Air Filter FM01043 For Honda CB300R|CB125R</h2>
+    <p class="product-price">$10.00</p>
+    <div class="button-container">
+        <button class="buy-now-btn" onclick="buyNow('BMC Air Filter', 10.00)">Buy Now</button>
+        <button class="add-to-cart-btn" onclick="addToCart('BMC Air Filter', 10.00)">Add to Cart</button>
+    </div>
+</div>
+
+       <!-- Product Card -->
+       <div class="product-card">
+        <img src="Sparknew.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-title">Pulsar Sparkplug</h2>
+        <p class="product-price">$8.00</p>
+        <div class="button-container">
+            <button class="buy-now-btn" onclick="buyNow('Pulsar 200 NS Brass Chain Sprocket Kit', 8.00)">Buy Now</button>
+            <button class="add-to-cart-btn" onclick="addToCart('Pulsar 200 NS Brass Chain Sprocket', 8.00)">Add to Cart</button>
+        </div>
+    </div>
+
+           <!-- Product Card -->
+           <div class="product-card">
+            <img src="oil.jpg" alt="Product Image" class="product-image">
+            <h2 class="product-title">Motul Engine oil</h2>
+            <p class="product-price">$30.00</p>
+            <div class="button-container">
+                <button class="buy-now-btn" onclick="buyNow('Pulsar 200 NS Brass Chain Sprocket Kit', 30.00)">Buy Now</button>
+                <button class="add-to-cart-btn" onclick="addToCart('Pulsar 200 NS Brass Chain Sprocket', 30.00)">Add to Cart</button>
+            </div>
+        </div>
+
+       <!-- Product Card -->
+       <div class="product-card">
+        <img src="chain kit.jpeg" alt="Product Image" class="product-image">
+        <h2 class="product-title">Pulsar 200 NS Brass Chain Sprocket Kit</h2>
+        <p class="product-price">$29.99</p>
+        <div class="button-container">
+            <button class="buy-now-btn" onclick="buyNow('Pulsar 200 NS Brass Chain Sprocket Kit', 29.99)">Buy Now</button>
+            <button class="add-to-cart-btn" onclick="addToCart('Pulsar 200 NS Brass Chain Sprocket', 29.99)">Add to Cart</button>
+        </div>
+    </div>
+
+       </div>
+    </section>
+
+    <section id="products">
+        <div class="product-grid">
+           <!-- Product Card -->
+           
+<div class="product-card">
+    <img src="Brake rotor.jpeg" alt="Product Image" class="product-image">
+    <h2 class="product-title">NG BRAKE DISC NG BRAKES Round Fixed Brake Disc</h2>
+    <p class="product-price">$20.00</p>
+    <div class="button-container">
+        <button class="buy-now-btn" onclick="buyNow('NG BRAKE DISC', 20.00)">Buy Now</button>
+        <button class="add-to-cart-btn" onclick="addToCart('NG BRAKE DISC', 20.00)">Add to Cart</button>
+    </div>
+</div>
+
+           <!-- Product Card -->
+           
+           <div class="product-card">
+            <img src="chain kit.jpeg" alt="Product Image" class="product-image">
+            <h2 class="product-title">Pulsar 200 NS Brass Chain Sprocket Kit</h2>
+            <p class="product-price">$29.99</p>
+            <div class="button-container">
+                <button class="buy-now-btn" onclick="buyNow('Pulsar 200 NS Brass Chain Sprocket Kit', 29.99)">Buy Now</button>
+                <button class="add-to-cart-btn" onclick="addToCart('Pulsar 200 NS Brass Chain Sprocket Kit', 29.99)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+</div>
+               
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Moto Consult 2024</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="Cart.js"></script>
+</body>
+
+</html>

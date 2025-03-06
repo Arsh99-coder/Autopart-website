@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <!-- <link rel="stylesheet" href="Cart.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Page Background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Cart Module Styling */
+        .cart-module {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* Cart Items Styling */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item span {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Remove Button */
+        .remove-btn {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 0.9em;
+        }
+
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+
+        /* Cart Total Styling */
+        .cart-total {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 2px solid #eaeaea;
+        }
+
+        /* Checkout Button Styling */
+        .checkout-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Scrollbar Styling */
+        .cart-module::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .cart-module::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .cart-module::-webkit-scrollbar-thumb {
+            background: #007bff;
+            border-radius: 10px;
+        }
+
+        .cart-module::-webkit-scrollbar-thumb:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-module">
+        <h1>Moto Consult</h1>
+        <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script src="Cart.js"></script>
+    <script>
+        // Load cart items from localStorage and update the cart on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCart();
+        });
+    </script>
+</body>
+</html>

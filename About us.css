@@ -1,0 +1,148 @@
+/* General container styles */
+body {
+  /* background: url("hero3.jpg"); */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styling */
+  header {
+    background-color: white;
+    padding: 20px;/*yaha 15 tha*/
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    /* border: 1px solid black; */
+    float: left;
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #ff6314;
+}
+
+nav ul li a.active {
+    background-color: #007bff;
+}
+
+
+  
+  /* About Us content styling */
+  .about-container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .about-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .team-section {
+    margin-top: 30px;
+  }
+  
+  .team-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Team members section */
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .team-member p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Footer styling */
+  footer {
+    display: flex;
+    margin-top: 8.4%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #333;
+    font-size: 20px;
+}
